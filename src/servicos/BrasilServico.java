@@ -2,7 +2,7 @@ package servicos;
 
 import java.security.InvalidParameterException;
 
-public class BrasilServico {
+public class BrasilServico implements Servico {
 	private double taxaJuro;
 	
 	public BrasilServico() {
