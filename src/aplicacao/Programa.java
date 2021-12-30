@@ -18,7 +18,8 @@ public class Programa {
 		System.out.print("Meses: ");
 		int meses = sc.nextInt();
 		
-		Servico us = new BrasilServico(2.0);
+		//Servico us = new BrasilServico(2.0);
+		Servico us = new UsaServico(1.0);
 		double pagamento = us.pagamento(quantia, meses);
 		
 		System.out.println("Pagamento depois de  " + meses + " meses:");
