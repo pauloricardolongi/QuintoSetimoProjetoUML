@@ -12,10 +12,12 @@ public class BrasilServico implements Servico {
 	public BrasilServico(double taxaJuro) {		
 		this.taxaJuro = taxaJuro;
 	}	
+	@Override
 	public double getTaxaJuro() {
 		return taxaJuro;
 	}	
 
+	@Override
 	public double pagamento(double quantia, int meses) {
 		if (meses < 1) {
 			throw new InvalidParameterException("Months must be greater than zero");

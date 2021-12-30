@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import servicos.BrasilServico;
+import servicos.Servico;
 import servicos.UsaServico;
 
 public class Programa {
@@ -17,7 +18,7 @@ public class Programa {
 		System.out.print("Meses: ");
 		int meses = sc.nextInt();
 		
-		UsaServico us = new UsaServico(1.0);
+		Servico us = new BrasilServico(2.0);
 		double pagamento = us.pagamento(quantia, meses);
 		
 		System.out.println("Pagamento depois de  " + meses + " meses:");
